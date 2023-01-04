@@ -7,23 +7,75 @@ html {
   font-size: 62.5%;
 }
 body {
-  font-family: sans-serif;
+  font-family: "rubik", sans-serif;
   line-height: 1;
   font-weight: 400;
   color: #555;
+}
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
+  font-weight: 700;
+  color: #333;
+  letter-spacing: -0.5px;
+}
+.header {
+  height: 9.6rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: #fdf2e9;
+  align-items: center;
+  padding: 0 4.8rem;
+}
+
+.logo {
+  height: 2.2rem;
+}
+.nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 4.8rem;
+}
+.nav-list a:link,
+.nav-list a:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 1.8rem;
+  transition: 0.3s;
+}
+.nav-list a:hover,
+.nav-list a:active {
+  color: #e67e22;
+}
+a.nav-cta:link,
+a.nav-cta:visited {
+  background-color: #e67e22;
+  color: #fff;
+  padding: 1.2rem 2.4rem;
+  border-radius: 9px;
+}
+.nav-cta:link:hover,
+.nav-cta:visited:hover {
+  color: #fff;
+  background-color: #cf711f;
 }
 
 .section-hero {
   background-color: #fdf2e9;
   padding: 4.8rem 0 9.6rem 0;
 }
-.container {
+
+.hero {
   max-width: 130rem;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
   gap: 9.6rem;
+  padding: 0 3.2rem;
 }
 .img-box img {
   width: 100%;
@@ -31,7 +83,7 @@ body {
 .heading-primary {
   font-size: 5.2rem;
   line-height: 1.05;
-  margin-bottom: 2.2rem;
+  margin-bottom: 3.2rem;
   color: #333;
 }
 .description {
@@ -90,5 +142,6 @@ body {
   font-weight: 600;
 }
 .delivered-meals .delivered-text span {
-  color: #e67e22;
+  color: #cf711f;
+  font-weight: 700;
 }
