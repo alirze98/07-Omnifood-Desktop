@@ -19,6 +19,9 @@ body {
   color: #333;
   letter-spacing: -0.5px;
 }
+/* ********************* */
+/* HEADER */
+/* ********************* */
 .header {
   height: 9.6rem;
   display: flex;
@@ -31,6 +34,11 @@ body {
 .logo {
   height: 2.2rem;
 }
+
+/* ********************* */
+/* NAVIGATION */
+/* ********************* */
+
 .nav-list {
   list-style: none;
   display: flex;
@@ -62,6 +70,10 @@ a.nav-cta:visited {
   color: #fff;
   background-color: #cf711f;
 }
+
+/* ********************* */
+/* HERO SECTION */
+/* ********************* */
 
 .section-hero {
   background-color: #fdf2e9;
@@ -144,4 +156,27 @@ a.nav-cta:visited {
 .delivered-meals .delivered-text span {
   color: #cf711f;
   font-weight: 700;
+}
+
+/* ********************* */
+/* GENERAL REUSABLE COMPONENTS */
+/* ********************* */
+
+.grid {
+  display: grid;
+  gap: 9.6rem;
+}
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
 }
