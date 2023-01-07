@@ -24,6 +24,7 @@
   align-items: center;
   gap: 4.8rem;
 }
+
 .nav-list a:link,
 .nav-list a:visited {
   display: inline-block;
@@ -33,10 +34,12 @@
   font-size: 1.8rem;
   transition: 0.3s;
 }
+
 .nav-list a:hover,
 .nav-list a:active {
   color: #e67e22;
 }
+
 a.nav-cta:link,
 a.nav-cta:visited {
   background-color: #e67e22;
@@ -44,6 +47,7 @@ a.nav-cta:visited {
   padding: 1.2rem 2.4rem;
   border-radius: 9px;
 }
+
 .nav-cta:link:hover,
 .nav-cta:visited:hover {
   color: #fff;
@@ -71,44 +75,20 @@ a.nav-cta:visited {
 .img-box img {
   width: 100%;
 }
+
 .heading-primary {
   font-size: 5.2rem;
   line-height: 1.05;
   margin-bottom: 3.2rem;
   color: #333;
 }
+
 .description {
   font-size: 2rem;
   line-height: 1.6;
   margin-bottom: 4.8rem;
 }
-.btn:link,
-.btn:visited {
-  display: inline-block;
-  font-size: 2rem;
-  background-color: #e67e22;
-  text-decoration: none;
-  color: white;
-  padding: 1.6rem 3.2rem;
-  border-radius: 0.9rem;
-  font-weight: 600;
-  transition: 0.3s;
-}
-.btn--outline:link,
-.btn--outline:visited {
-  background-color: #fff;
-  color: #555;
-}
-.btn--full:hover {
-  background-color: #cf711f;
-}
-.btn--outline:hover {
-  background-color: #fdf2e9;
-  box-shadow: inset 0 0 0 3px #fff;
-}
-.margin-right-sm {
-  margin-right: 1.6rem;
-}
+
 .delivered-meals {
   display: flex;
   align-items: center;
@@ -223,4 +203,106 @@ a.nav-cta:visited {
 .step-description {
   font-size: 1.8rem;
   line-height: 1.8;
+}
+
+/* ********************* */
+/* MEALS SECTION */
+/* ********************* */
+
+.section-meals {
+  padding: 9.6rem 0;
+}
+
+.meal {
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  border-radius: 11px;
+  overflow: hidden;
+}
+
+.meal-img {
+  width: 100%;
+}
+
+.meal-content {
+  padding: 3.2rem 4.8rem 4.8rem 4.8rem;
+}
+
+.meal-tags {
+  margin-bottom: 1.2rem;
+  display: flex;
+  gap: 0.4rem;
+}
+
+.tag {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  color: #333;
+  padding: 0.4rem 0.8rem;
+  border-radius: 100px;
+  font-weight: 600;
+}
+
+.tag--vegeterian {
+  background-color: #51cf66;
+}
+
+.tag--vegan {
+  background-color: #94d82d;
+}
+
+.tag--paleo {
+  background-color: #ffd43b;
+}
+
+.meal-title {
+  font-size: 2.4rem;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 3.2rem;
+}
+
+.meal-attributes {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.meal-attribute {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  font-size: 1.8rem;
+}
+
+.meal-attribute .icon {
+  width: 2.4rem;
+  height: 2.4rem;
+  color: #e67e22;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  font-size: 1.8rem;
+}
+
+.list-icon {
+  color: #e67e22;
+  width: 3rem;
+  height: 3rem;
+}
+
+.all-recipes {
+  text-align: center;
+  font-size: 1.8rem;
 }
