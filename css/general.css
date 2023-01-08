@@ -75,6 +75,10 @@ body {
   align-items: center;
 }
 
+.grid:not(:last-child) {
+  margin-bottom: 9.6rem;
+}
+
 .btn:link,
 .btn:visited {
   display: inline-block;
