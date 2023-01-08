@@ -79,6 +79,7 @@ body {
   margin-bottom: 9.6rem;
 }
 
+.btn,
 .btn:link,
 .btn:visited {
   display: inline-block;
@@ -88,6 +89,9 @@ body {
   color: white;
   padding: 1.6rem 3.2rem;
   border-radius: 0.9rem;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
   font-weight: 600;
   transition: 0.3s;
 }
@@ -143,4 +147,9 @@ strong {
 .link:active {
   border-bottom: 1px solid transparent;
   color: #cf711f;
+}
+
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
 }
